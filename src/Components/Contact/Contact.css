@@ -1,0 +1,128 @@
+.contact {
+  padding-top: 8%;
+  padding-bottom: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.contact-caption {
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  color: #232323;
+  margin-bottom: 25px;
+}
+
+.contact-description {
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #60abfb;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 -25px;
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact-list__element {
+  margin: 0 25px;
+}
+
+.contact-list__element-img {
+  width: 90%;
+  cursor: pointer;
+}
+
+.contact-list__element-img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.contact-list__element-img:not(:hover) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-list__element-img:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+@media (max-width: 575px) {
+  .contact {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .contact-caption {
+    font-size: 34px;
+  }
+  .contact-description {
+    font-size: 20px;
+  }
+  .contact-list {
+    text-align: center;
+    margin: 0 0;
+    margin-top: 75px;
+  }
+  .contact-list__element-img {
+    width: 75%;
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact {
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .contact-caption {
+    font-size: 34px;
+  }
+  .contact-description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    padding-top: 15%;
+    padding-bottom: 25%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .contact-caption {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact {
+    padding-top: 10%;
+    padding-bottom: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .contact-caption {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,121 @@
+@import "../../base";
+
+.contact {
+  padding-top: $block-padding-top;
+  padding-bottom: $block-padding-bottom-3;
+  padding-left: $block-padding-left;
+  padding-right: $block-padding-right;
+
+  &-caption {
+    text-align: center;
+    @include font-style($font-bold, $font-size-6-2, $color-black);
+    margin-bottom: 25px;
+  }
+
+  &-description {
+    text-align: center;
+    @include font-style($font-regular, $font-size-3, $color-basic-blue);
+  }
+
+  &-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -25px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+
+    &__element {
+      margin: 0 25px;
+
+      &-img {
+        width: 90%;
+        cursor: pointer;
+      }
+
+      &-img:hover {
+        transition: 0.3s;
+        transform: translateY(-3px);
+      }
+
+      &-img:not(:hover) {
+        transition: 0.3s;
+      }
+
+      &-img:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .contact {
+    padding-top: $block-padding-top-3;
+    padding-bottom: 25%;
+    padding-left: $block-padding-left-4;
+    padding-right: $block-padding-right-4;
+
+    &-caption {
+      font-size: $font-size-6-1;
+    }
+
+    &-description {
+      font-size: $font-size-3;
+    }
+
+    &-list {
+      text-align: center;
+      margin: 0 0;
+      margin-top: 75px;
+
+      &__element-img {
+        width: 75%;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact {
+    padding-top: $block-padding-top-2;
+    padding-bottom: 20%;
+    padding-left: $block-padding-left-4;
+    padding-right: $block-padding-right-4;
+
+    &-caption {
+      font-size: $font-size-6-1;
+    }
+
+    &-description {
+      font-size: $font-size-3;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    padding-top: $block-padding-top-3;
+    padding-bottom: 25%;
+    padding-left: $block-padding-left-3;
+    padding-right: $block-padding-right-3;
+
+    &-caption {
+      font-size: $font-size-6-2;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact {
+    padding-top: $block-padding-top-2;
+    padding-bottom: $block-padding-bottom-3;
+    padding-left: $block-padding-left-2;
+    padding-right: $block-padding-right-2;
+
+    &-caption {
+      font-size: $font-size-6-2;
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import "../../base";
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: $block-padding-top;
+  padding-bottom: $block-padding-bottom;
+  padding-left: $block-padding-left;
+  padding-right: $block-padding-right;
+
+  &-me {
+    max-width: 60%;
+
+    &__title {
+      @include font-style($font-bold, $font-size-7, $color-black);
+    }
+
+    &__more {
+      @include font-style($font-regular, $font-size-3, $color-black);
+
+      &-decor {
+        color: $color-basic-blue;
+      }
+    }
+
+    &__actions {
+      margin-top: 50px;
+
+      &-works {
+        @include button-style($border-radius-1, $color-gradient-1);
+        @include font-style($font-medium, $font-size-2, $color-white);
+      }
+
+      &-works:hover {
+        transition: 0.3s;
+        transform: translateY(-3px);
+      }
+
+      &-works:not(:hover) {
+        transition: 0.3s;
+      }
+
+      &-works:active {
+        transform: scale(0.9);
+      }
+
+      &-contact {
+        @include button-style($border-radius-1, $color-gradient-3);
+        @include font-style($font-medium, $font-size-2, $color-basic-blue);
+      }
+
+      &-contact:hover {
+        transition: 0.3s;
+        transform: translateY(-3px);
+      }
+
+      &-contact:not(:hover) {
+        transition: 0.3s;
+      }
+
+      &-contact:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  &-grafic {
+    width: 344px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about {
+    padding-top: $block-padding-top-3;
+    padding-bottom: $block-padding-bottom-2;
+    padding-left: $block-padding-left-4;
+    padding-right: $block-padding-right-4;
+
+    &-grafic {
+      display: none;
+    }
+
+    &-me {
+      max-width: 90%;
+
+      &__title {
+        font-size: $font-size-6;
+      }
+
+      &__more {
+        font-size: $font-size-2;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .about {
+    padding-top: $block-padding-top-3;
+    padding-bottom: $block-padding-bottom-2;
+    padding-left: $block-padding-left-4;
+    padding-right: $block-padding-right-4;
+
+    &-grafic {
+      display: none;
+    }
+
+    &-me {
+      max-width: 90%;
+
+      &__title {
+        font-size: $font-size-6-1;
+      }
+
+      &__more {
+        font-size: $font-size-2;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about {
+    padding-top: $block-padding-top-3;
+    padding-bottom: $block-padding-bottom;
+    padding-left: $block-padding-left-3;
+    padding-right: $block-padding-right-3;
+
+    &-grafic {
+      display: none;
+    }
+
+    &-me {
+      max-width: 90%;
+
+      &__title {
+        font-size: $font-size-7;
+      }
+
+      &__more {
+        font-size: $font-size-3;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about {
+    padding-top: $block-padding-top-2;
+    padding-bottom: $block-padding-bottom;
+    padding-left: $block-padding-left-2;
+    padding-right: $block-padding-right-2;
+
+    &-grafic {
+      display: none;
+    }
+
+    &-me {
+      max-width: 90%;
+
+      &__title {
+        font-size: $font-size-7;
+      }
+
+      &__more {
+        font-size: $font-size-3;
+      }
+    }
+  }
+}

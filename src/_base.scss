@@ -1,0 +1,79 @@
+$font-light: 200;
+$font-regular: 400;
+$font-medium: 600;
+$font-bold: 800;
+
+$font-size-1: 16px;
+$font-size-2: 18px;
+$font-size-3: 20px;
+$font-size-4: 24px;
+$font-size-5: 27px;
+$font-size-6: 30px;
+$font-size-6-1: 34px;
+$font-size-6-2: 40px;
+$font-size-7: 44px;
+
+$color-white: #ffffff;
+$color-light-gray: #e5e5e5;
+$color-black: #232323;
+$color-basic-blue: #60abfb;
+$color-light-blue: #aee1fc;
+$color-light-dark-blue: #5170fd;
+$color-dark-blue: #4636fc;
+$color-gradient-1: linear-gradient(266.13deg, #5170fd 3.28%, #60abfb 96.25%);
+$color-gradient-2: linear-gradient(131.45deg, #7cd1ff 9.9%, #60abfb 88.27%);
+$color-gradient-3: rgba(174, 225, 252, 0.25);
+
+@mixin font-style($weight, $size, $color) {
+  font: {
+    family: Manrope, sans-serif;
+    style: normal;
+    weight: $weight;
+    size: $size;
+  }
+
+  color: $color;
+}
+
+$block-padding-top: 8%;
+$block-padding-top-2: 10%;
+$block-padding-top-3: 15%;
+
+$block-padding-bottom: 8%;
+$block-padding-bottom-2: 10%;
+$block-padding-bottom-3: 15%;
+
+$block-padding-left: 15%;
+$block-padding-left-2: 10%;
+$block-padding-left-3: 7%;
+$block-padding-left-4: 5%;
+
+$block-padding-right: 15%;
+$block-padding-right-2: 10%;
+$block-padding-right-3: 7%;
+$block-padding-right-4: 5%;
+
+$border-radius-1: 25px;
+$border-radius-2: 50px;
+
+@mixin button-style($radius, $bgcolor) {
+  border: none;
+  cursor: pointer;
+  border-radius: $radius;
+
+  @if $bgcolor==$color-gradient-3 {
+    background: $color-gradient-3;
+  }
+
+  @if $bgcolor==$color-gradient-2 {
+    background: $color-gradient-2;
+  }
+
+  @if $bgcolor==$color-gradient-1 {
+    background: $color-gradient-1;
+  }
+
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
